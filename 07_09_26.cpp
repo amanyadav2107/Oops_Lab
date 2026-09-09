@@ -32,4 +32,4 @@ int main()
     return 0;
 }
 
-//reate two classes student class and sports class , store the academic mark in the student class and sport mark in sports class and these should be private.Use the frien function to calculate the total marks 
+//reate two classes student class and sports class , store the academic mark in the student class and sport mark in sports class and these should be private.Use the frien function to calculate the total marks .
