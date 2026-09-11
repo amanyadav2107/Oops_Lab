@@ -35,3 +35,8 @@ int main() {
     
     return 0;
 }
+
+//Key Points:-
+//Can be called without objects
+
+//Static Global Variable:-
