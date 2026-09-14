@@ -104,3 +104,52 @@ int main()
 
     return 0;
 }
+
+//Create a univesity class where the university name is static and the student details are non static , now display both student details with university name.
+
+#include <iostream>
+using namespace std;
+
+class University
+{
+    static string universityName; 
+    string studentName;
+    int rollNo;
+    float marks;
+public:
+    University(string sName, int r, float m)
+    {
+        studentName = sName;
+        rollNo = r;
+        marks = m;
+    }
+
+    static void showUniversity()
+    {
+        cout << "University Name: " << universityName << endl;
+    }
+
+    void showStudent() const
+    {
+        cout << "Student Name: " << studentName
+             << ", Roll No: " << rollNo
+             << ", Marks: " << marks << endl;
+    }
+};
+
+string University::universityName = "Delhi University";
+
+int main()
+{
+    University s1("Aman", 101, 89.5);
+    University s2("Riya", 102, 92.0);
+    University s3("Karan", 103, 85.0);
+
+    University::showUniversity();
+
+    s1.showStudent();
+    s2.showStudent();
+    s3.showStudent();
+
+    return 0;
+}
